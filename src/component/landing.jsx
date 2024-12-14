@@ -13,6 +13,10 @@ function Landing(){
             case "About":
                 navigation ("/about")
                 break;
+            
+            case "More":
+                navigation ("/more")
+                break;
         }
         
     }
@@ -22,6 +26,7 @@ function Landing(){
             <h4>landin page //</h4>
             <button onClick={(event)=> handelNavigation(event, "Home")}>home</button>
             <button onClick={(event)=> handelNavigation(event, "About")}>about</button>
+            <button onClick={(event)=> handelNavigation(event, "More")}>see more</button>
         </div>
     )
 }
