@@ -22,7 +22,7 @@ function Landing(){
     }
 
     return(
-        <div>
+        <div className="landing">
             <h4>landin page //</h4>
             <button onClick={(event)=> handelNavigation(event, "Home")}>home</button>
             <button onClick={(event)=> handelNavigation(event, "About")}>about</button>
