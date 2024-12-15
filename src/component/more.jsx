@@ -1,5 +1,5 @@
 function More(){
-    return <h1>see more</h1>
+    return <h1 className="more">see more</h1>
          
 }
 
