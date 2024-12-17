@@ -1,4 +1,6 @@
 .landing{
     background-color: wheat;
     color: aqua;
+    display: flex;
+    
 }
