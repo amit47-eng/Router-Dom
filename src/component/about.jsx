@@ -1,7 +1,13 @@
 import "./style/about.css"
 
 function About(){
-    return <h4 className="about">about</h4>
+    return (
+    <div>
+        <h4 className="about">about</h4>
+        <input type="text" />
+        <button>click</button>
+    </div>
+    )
 }
 
 export default About;
