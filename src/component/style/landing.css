@@ -42,25 +42,56 @@
         opacity: 0;
         visibility: hidden;
     }
-    @media screen and (max-width: 768px){
-        flex-direction: column;
-        align-items: center;
-        .logo{
-            margin-bottom: 0;
-        }
-        .button{
-            margin-top: 10px;
-        }
-        .links{
-            flex-direction: column;
-            align-items: center;
-            margin-top: 20px;
-        }
-        .links a{
-            margin-bottom: 10px;
-        }
-        .links ul{
-            display: none;
+    
+    @media screen and (max-width: 600px){
+       .logo{
+            font-size: 2rem;
         }
     }
+    @keyframes fade-in{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    
+        @media screen and (max-width: 600px){
+            font-size: 1.5rem;
+        }
+    
+        @keyframes fade-out{
+            0%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+    
+        @media screen and (max-width: 600px){
+            font-size: 1.2rem;
+        }
+    
+        @keyframes slide-in{
+            0%{
+                transform: translateY(-100%);
+            }
+            100%{
+                transform: translateY(0%);
+            }
+        }
+        
+        @media screen and (max-width: 600px){
+            transform: translateY(-50%);
+        }
+        
+        @keyframes slide-out{
+            0%{
+                transform: translateY(0%);
+            }
+            100%{
+                transform: translateY(100%);
+            }
+        }
 }
